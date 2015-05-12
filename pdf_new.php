@@ -62,6 +62,7 @@ $booking_status=$result_sel_tour["booking_status"];
 $per_adult=$result_sel_tour["per_adult"];
 $total=$result_sel_tour["total"];
 $t_c=$result_sel_tour["t_c"];
+$middel=$result_sel_tour["middel"];
 $last=$result_sel_tour["last"];
 $reference_number=$result_sel_tour["reference_number"];
 }
@@ -200,6 +201,25 @@ $toolcopy3 .= '</table>';
 $pdf->writeHTML($toolcopy3, true, false, true, false, '');
 
 $pdf->writeHTML($t_c, true, false, true, false, '');
+
+
+$pdf->AddPage();
+// get the current page break margin
+$bMargin = $pdf->getBreakMargin();
+// get current auto-page-break mode
+$auto_page_break = $pdf->getAutoPageBreak();
+// disable auto-page-break
+$pdf->SetAutoPageBreak(false, 0);
+// set bacground image
+$img_file = K_PATH_IMAGES.'Fusion.png';
+$pdf->Image($img_file, 0, 0, 210, 297, '', '', '', false, 300, '', false, false, 0);
+// restore auto-page-break status
+$pdf->SetAutoPageBreak($auto_page_break, $bMargin);
+// set the starting point for the page content
+$pdf->setPageMark();
+
+
+$pdf->writeHTML($middel, true, false, true, false, '');
 
 $pdf->AddPage();
 // get the current page break margin
