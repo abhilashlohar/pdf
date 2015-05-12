@@ -120,8 +120,7 @@ $toolcopy .= '<tr>
 
 $toolcopy .= '</table>';
 
-$toolcopy='<br/><br/><br/><p><span><strong>IMPORTANT - TRAVEL INSURANCE</strong></span></p>';
-$toolcopy.='<span>IMPORTANT - TRAVEL INSURANCE</span>';
+
 $pdf->writeHTML($toolcopy, true, false, true, false, '');
 
 
