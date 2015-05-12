@@ -296,6 +296,6 @@ $toolcopy8 = '<br/><br/><br/><span style="color:#666;font-size:16;"><b>WHY CHOOS
 $pdf->writeHTML($toolcopy8, true, false, true, false, '');
 $pdf->writeHTML($last, true, false, true, false, '');
 
-$pdf->Output(1, 'D');
+$pdf->Output($reference_number.'pdf', 'D');
 unset($_SESSION['app_number']);
 ?>
