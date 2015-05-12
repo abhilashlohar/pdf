@@ -190,9 +190,9 @@ $pdf->setPageMark();
 $toolcopy6 = '<br/><br/><br/><span style="color:#666;font-size:16;"><b>QUOTATION</b></span><br/>';
 $pdf->writeHTML($toolcopy6, true, false, true, false, '');
 
-$toolcopy3 = '<div style="color:blue;font-size:12;"><b>LAND PRICE PER PERSON:</b></div>';
+$toolcopy3 = '<div style="color:#666;font-size:11;"><b>LAND PRICE PER PERSON:</b></div>';
 $toolcopy3 .= '<table border="1" cellpadding="5">';
-$toolcopy3 .= '<tr><td style="color:blue;font-size:9;">Per adult</td><td>'.$per_adult.'</td></tr>';
+$toolcopy3 .= '<tr><td style="color:#666;font-size:9;">Per adult</td><td>'.$per_adult.'</td></tr>';
 $toolcopy3 .= '<tr style="background-color:#EF6D11;color:white;font-size:10;"><td><b>TOTAL COST</b></td><td><b>'.$total.'</b></td></tr>';
 $toolcopy3 .= '</table>';
 
