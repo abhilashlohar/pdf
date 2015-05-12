@@ -268,7 +268,7 @@ $pdf->SetAutoPageBreak($auto_page_break, $bMargin);
 $pdf->setPageMark();
 
 
-$toolcopy8 = '<br/><br/><br/><span style="color:#26a69a;font-size:16;"><b>WHY CHOOSE US</b></span><br/>';
+$toolcopy8 = '<br/><br/><br/><span style="color:#666;font-size:16;"><b>WHY CHOOSE US</b></span><br/>';
 $pdf->writeHTML($toolcopy8, true, false, true, false, '');
 $pdf->writeHTML($last, true, false, true, false, '');
 
