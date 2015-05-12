@@ -82,7 +82,7 @@ $pdf->setPageMark();
 
 
 
-$toolcopy = '<br/><br/><div><span style="font-size:12;color:dimgrey;"><b>Quotation prepared for </b></span><span style="font-size:13;color:#EF6D11;"> <b>Fusion Tours</b></span></div>';	
+$toolcopy = '<br/><br/><br/><div><span style="font-size:12;color:dimgrey;"><b>Quotation prepared for </b></span><span style="font-size:13;color:#EF6D11;"> <b>Fusion Tours</b></span></div>';	
 $toolcopy .= '<br/><br/><br/><br/>';
 $toolcopy .= '<table cellpadding="5">';
 $toolcopy .= '<tr>
@@ -137,8 +137,7 @@ $pdf->setPageMark();
 
 
 
-$toolcopy5 = '<br/><br/>';
-$toolcopy5 .= '<span style="color:#26a69a;font-size:16;">SUGGESTED ITINERARY</span>';
+$toolcopy5 = '<br/><br/><br/><span style="color:#666;font-size:16;"><b>SUGGESTED ITINERARY</b></span>';
 $pdf->writeHTML($toolcopy5, true, false, true, false, '');
 
 
@@ -188,7 +187,7 @@ $pdf->setPageMark();
 
 
 
-$toolcopy6 = '<br/><br/><span style="color:#26a69a;font-size:16;">QUOTATION</span><br/>';
+$toolcopy6 = '<br/><br/><br/><span style="color:#666;font-size:16;"><b>QUOTATION</b></span><br/>';
 $pdf->writeHTML($toolcopy6, true, false, true, false, '');
 
 $toolcopy3 = '<div style="color:blue;font-size:12;"><b>LAND PRICE PER PERSON:</b></div>';
@@ -218,7 +217,7 @@ $pdf->setPageMark();
 
 
 
-$toolcopy7 = '<br/><br/><span style="color:#26a69a;font-size:16;">HOTEL DESCRIPTIONS</span><br/>';
+$toolcopy7 = '<br/><br/><br/><span style="color:#666;font-size:16;"><b>HOTEL DESCRIPTIONS</b></span><br/>';
 $pdf->writeHTML($toolcopy7, true, false, true, false, '');
 
 $sel_hotels=mysql_query("SELECT * FROM `hotels` where `tour_id`='$q'");
@@ -268,7 +267,7 @@ $pdf->SetAutoPageBreak($auto_page_break, $bMargin);
 $pdf->setPageMark();
 
 
-$toolcopy8 = '<br/><br/><span style="color:#26a69a;font-size:16;">WHY CHOOSE US</span><br/>';
+$toolcopy8 = '<br/><br/><br/><span style="color:#26a69a;font-size:16;"><b>WHY CHOOSE US</b></span><br/>';
 $pdf->writeHTML($toolcopy8, true, false, true, false, '');
 $pdf->writeHTML($last, true, false, true, false, '');
 
