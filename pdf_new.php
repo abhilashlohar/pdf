@@ -152,7 +152,7 @@ $text1=$result_tour_infos["text1"];
 $text2=$result_tour_infos["text2"];
 $file=$result_tour_infos["file"];
 $toolcopy2 = '<table border="0" cellpadding="5" cellspacing="10">';
-$toolcopy2 .= '<tr style="background-color:#EF6D11;color:White;"><th><span style="font-size:12;">'.$date_itinary.'</span></th><th><span style="font-size:12;">'.$arrive.'</span></th></tr>';
+$toolcopy2 .= '<tr style="background-color:#f08365;color:White;"><th><span style="font-size:12;">'.$date_itinary.'</span></th><th><span style="font-size:12;">'.$arrive.'</span></th></tr>';
 if(!empty($file)){
 	$toolcopy2 .= '<tr><td><img src="../quotation/app/webroot/tour/'.$file.'" width="300px" height="200px"/></td><td><div style="border-bottom:solid 1px orange;font-size:11;">'.$text1.'</div><br/><b style="color:#494848;font-size:10;">'.$text2.'</b></td></tr>';
 }
