@@ -118,6 +118,8 @@ $toolcopy .= '<tr>
 				</tr>';
 
 $toolcopy .= '</table>';
+
+$toolcopy='<p><span><b>IMPORTANT - TRAVEL INSURANCE</b></span></p>';
 $pdf->writeHTML($toolcopy, true, false, true, false, '');
 
 
