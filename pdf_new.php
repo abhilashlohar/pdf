@@ -84,7 +84,7 @@ $pdf->setPageMark();
 
 
 
-$toolcopy = '<br/><br/><br/><div><span style="font-size:12;color:dimgrey;"><b>Quotation prepared for </b></span><span style="font-size:13;color:#EF6D11;"> <b>Fusion Tours</b></span></div>';	
+$toolcopy = '<br/><br/><br/><div><span style="font-size:12;"><b>Quotation prepared for </b></span><span style="font-size:13;color:#00a0ae3;"> <b>Fusion Tours</b></span></div>';	
 $toolcopy .= '<br/><br/><br/><br/>';
 $toolcopy .= '<table cellpadding="5">';
 $toolcopy .= '<tr>
