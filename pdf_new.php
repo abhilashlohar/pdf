@@ -232,6 +232,13 @@ $pdf->SetAutoPageBreak($auto_page_break, $bMargin);
 $pdf->setPageMark();
 
 
+
+
+
+$middel_page='<br/><br/><br/><br/><br/><br/>';
+$middel_page.=$middel;
+$pdf->writeHTML($middel_page, true, false, true, false, '');
+
 $pdf->AddPage();
 // get the current page break margin
 $bMargin = $pdf->getBreakMargin();
@@ -246,9 +253,6 @@ $pdf->Image($img_file, 0, 0, 210, 297, '', '', '', false, 300, '', false, false,
 $pdf->SetAutoPageBreak($auto_page_break, $bMargin);
 // set the starting point for the page content
 $pdf->setPageMark();
-$middel_page='<br/><br/><br/><br/><br/><br/>';
-$middel_page.=$middel;
-$pdf->writeHTML($middel_page, true, false, true, false, '');
 
 $pdf->AddPage();
 // get the current page break margin
