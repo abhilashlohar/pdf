@@ -92,6 +92,13 @@ $pdf->SetFont($fontNameBold, 'BI', 10, '', 'false');
 $pdf->writeHTML($toolcopy, true, false, true, false, '');
 
 
+$html='<table><tr><td>qwert</td>';
+$pdf->writeHTML($html, true, false, true, false, '');
+$html.='<td>89798</td></tr></table>';
+$pdf->SetFont($fontNameBold, 'BI', 10, '', 'false');
+$pdf->writeHTML($html, true, false, true, false, '');
+
+
 $pdf->SetFont($fontname, 'BI', 10, '', 'false');
 
 $toolcopy = '<br/><br/><br/><br/>';
