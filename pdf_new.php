@@ -231,6 +231,21 @@ $pdf->SetAutoPageBreak($auto_page_break, $bMargin);
 // set the starting point for the page content
 $pdf->setPageMark();
 
+
+$pdf->AddPage();
+// get the current page break margin
+$bMargin = $pdf->getBreakMargin();
+// get current auto-page-break mode
+$auto_page_break = $pdf->getAutoPageBreak();
+// disable auto-page-break
+$pdf->SetAutoPageBreak(false, 0);
+// set bacground image
+$img_file = K_PATH_IMAGES.'Fusion.png';
+$pdf->Image($img_file, 0, 0, 210, 297, '', '', '', false, 300, '', false, false, 0);
+// restore auto-page-break status
+$pdf->SetAutoPageBreak($auto_page_break, $bMargin);
+// set the starting point for the page content
+$pdf->setPageMark();
 $middel_page='<br/><br/><br/><br/><br/><br/>';
 $middel_page.=$middel;
 $pdf->writeHTML($middel_page, true, false, true, false, '');
