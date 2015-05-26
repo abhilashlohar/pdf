@@ -66,6 +66,7 @@ $t_c=$result_sel_tour["t_c"];
 $middel=$result_sel_tour["middel"];
 $last=$result_sel_tour["last"];
 $reference_number=$result_sel_tour["reference_number"];
+$prepared_for=$result_sel_tour["prepared_for"];
 }
 
 // get the current page break margin
@@ -84,7 +85,7 @@ $pdf->setPageMark();
 
 
 
-$toolcopy = '<br/><br/><br/><br/><br/><br/><div style="float:left;"><span style="font-size:12;color:#5A5A5A;"><b> Quotation prepared for </b></span><span style="font-size:13;color:rgb(0,160,227);font-weight: bold;font-family:opensansb;"> <b>Fusion Tours</b></span></div>';
+$toolcopy = '<br/><br/><br/><br/><br/><br/><div style="float:left;"><span style="font-size:12;color:#5A5A5A;"><b> Quotation prepared for </b></span><span style="font-size:13;color:rgb(0,160,227);font-weight: bold;font-family:opensansb;"> <b>'.$prepared_for.'</b></span></div>';
 
 $pdf->writeHTML($toolcopy, true, false, true, false, '');
 
