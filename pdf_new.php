@@ -86,7 +86,8 @@ $pdf->setPageMark();
 
 $toolcopy = '<br/><br/><br/><br/><br/><br/><div style="float:left;"><span style="font-size:12;color:#5A5A5A;"><b> Quotation prepared for </b></span><span style="font-size:13;color:rgb(0,160,227);font-weight: bold;"> <b>Fusion Tours</b></span></div>';
 
-$pdf->writeHTML($Bold, true, false, true, false, '');
+$html='<span style="font-family:opensansb;font-weight:bold">my text in bold</span>: my normal text';
+$pdf->writeHTML($html, true, false, true, false, '');
 
 
 
