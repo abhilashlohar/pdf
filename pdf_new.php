@@ -40,7 +40,7 @@ $pdf->setImageScale(PDF_IMAGE_SCALE_RATIO);
 //set some language-dependent strings
 $pdf->setLanguageArray($l);
 // remove default header/footer
-$pdf->setPrintHeader(false);
+$pdf->setPrintHeader(true);
 $pdf->setPrintFooter(false);
 
 // set font
