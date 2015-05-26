@@ -85,10 +85,11 @@ $pdf->setPageMark();
 
 
 $toolcopy = '<br/><br/><br/><br/><br/><br/><div><span style="font-size:12;"><b> Quotation prepared for </b></span>';
-$pdf->SetFont($fontNameBold, 'BI', 10, '', 'false');
+$pdf->SetFont($fontNameBold, 'BI', 20, '', 'false');
 $toolcopy .= '<span style="font-size:13;color:rgb(0,160,227);"> <b>Fusion Tours</b></span></div>';
 $toolcopy .= 'hello';
 $pdf->SetFont($fontname, 'BI', 10, '', 'false');
+$toolcopy .= 'hello';
 $toolcopy .= '<br/><br/><br/><br/>';
 $toolcopy .= '<table cellpadding="5">';
 $toolcopy .= '<tr>
