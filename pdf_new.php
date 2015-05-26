@@ -84,17 +84,17 @@ $pdf->setPageMark();
 
 
 
-$toolcopy = '<br/><br/><br/><br/><br/><br/><span style="font-size:12;"><b> Quotation prepared for </b></span>';
+$toolcopy = '<br/><br/><br/><br/><br/><br/><div><span style="font-size:12;"><b> Quotation prepared for </b></span>';
 $pdf->writeHTML($toolcopy, true, false, true, false, '');
 
-$toolcopy = '<span style="font-size:13;color:rgb(0,160,227);font-weight: bold;"> <b>Fusion Tours</b></span>';
+$toolcopy = '<span style="font-size:13;color:rgb(0,160,227);font-weight: bold;"> <b>Fusion Tours</b></span></div>';
 $pdf->SetFont($fontNameBold, 'BI', 10, '', 'false');
 $pdf->writeHTML($toolcopy, true, false, true, false, '');
 
 
 $pdf->SetFont($fontname, 'BI', 10, '', 'false');
 
-$toolcopy .= '<br/><br/><br/><br/>';
+$toolcopy = '<br/><br/><br/><br/>';
 $toolcopy .= '<table cellpadding="5">';
 $toolcopy .= '<tr>
 				<td class="qw" style="border:1px solid #ccc;">Reference Number: </td>
