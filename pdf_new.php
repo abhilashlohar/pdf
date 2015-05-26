@@ -205,10 +205,10 @@ $pdf->setPageMark();
 $toolcopy6 = '<br/><br/><br/><br/><br/><br/><br/><span style="font-size:16;"><b>QUOTATION</b></span><br/>';
 $pdf->writeHTML($toolcopy6, true, false, true, false, '');
 
-$toolcopy3 = '<div style="color:#666;font-size:11;"><b>LAND PRICE PER PERSON:</b></div>';
+$toolcopy3 = '<div style="color:#666;font-size:11;"><b>LAND PRICE PER PERSON:</b></div><br/>';
 $toolcopy3 .= '<table border="1" cellpadding="5">';
 $toolcopy3 .= '<tr><td style="color:#666;font-size:9;">Per adult</td><td>'.$per_adult.'</td></tr>';
-$toolcopy3 .= '<tr style="background-color:rgb(254,204,0);font-size:10;"><td><b>TOTAL COST</b></td><td><b>'.$total.'</b></td></tr>';
+$toolcopy3 .= '<tr style="background-color:rgb(0,160,227);color:#fff;font-size:10;"><td><b>TOTAL COST</b></td><td><b>'.$total.'</b></td></tr>';
 $toolcopy3 .= '</table>';
 
 $pdf->writeHTML($toolcopy3, true, false, true, false, '');
@@ -252,7 +252,7 @@ $pdf->setPageMark();
 
 
 
-$toolcopy7 = '<br/><br/><br/><br/><br/><br/><br/><br/><span style="font-size:16;"><b>HOTEL DESCRIPTIONS</b></span><br/>';
+$toolcopy7 = '<br/><br/><br/><br/><br/><br/><br/><br/><span style="font-size:16;"><b>  HOTEL DESCRIPTIONS</b></span><br/>';
 $pdf->writeHTML($toolcopy7, true, false, true, false, '');
 
 $sel_hotels=mysql_query("SELECT * FROM `hotels` where `tour_id`='$q'");
@@ -270,10 +270,10 @@ $toolcopy2 .= '<tr><th style="background-color:rgb(0,160,227);color:#fff;font-si
 $toolcopy2 .= '</table>';
 $toolcopy2 .= '<table border="0" cellpadding="5" cellspacing="10">';
 if(!empty($file)){
-	$toolcopy2 .= '<tr><td><img src="../quotation/app/webroot/hotel/'.$file.'" width="300px" height="200px"/></td><td><span align="left" style="font-size:10;color:#666;"><b>'.$place_title.'</b></span><br><span align="left" style="font-size:10;color:#3F3E3E;">'.$place_des.'</span><br><span align="left" style="font-size:10;color:blue;"><b>'.$place_email.'</b></span></td></tr>';
+	$toolcopy2 .= '<tr><td><img src="../quotation/app/webroot/hotel/'.$file.'" width="300px" height="200px"/></td><td><span align="left" style="font-size:10;color:#666;"><b>'.$place_title.'</b></span><br><span align="left" style="font-size:10;text-align:justify;">'.$place_des.'</span><br><span align="left" style="font-size:10;color:blue;"><b>'.$place_email.'</b></span></td></tr>';
 }
 else{
-	$toolcopy2 .= '<tr><td></td><td><span align="left" style="font-size:12;color:blue;"><b>'.$place_title.'</b></span><br><span align="left" style="font-size:12;color:#3F3E3E;">'.$place_des.'</span><br><span align="left" style="font-size:12;color:blue;"><b>'.$place_email.'</b></span></td></tr>';
+	$toolcopy2 .= '<tr><td></td><td><span align="left" style="font-size:12;color:blue;"><b>'.$place_title.'</b></span><br><span align="left" style="font-size:12;text-align:justify;">'.$place_des.'</span><br><span align="left" style="font-size:12;color:blue;"><b>'.$place_email.'</b></span></td></tr>';
 }
 
 $toolcopy2 .= '</table>';
