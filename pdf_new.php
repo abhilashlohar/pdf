@@ -24,7 +24,7 @@ $pdf->setFooterFont(Array(PDF_FONT_NAME_DATA, '', PDF_FONT_SIZE_DATA));
 // set default monospaced font
 $pdf->SetDefaultMonospacedFont(PDF_FONT_MONOSPACED);
 $fontname=$pdf->addTTFfont('OpenSans-Bold.ttf', 'TrueTypeUnicode', '', 32);
-$fontname=$pdf->addTTFfont('OpenSans-Regular.ttf', 'TrueTypeUnicode', '', 32);
+//$fontname=$pdf->addTTFfont('OpenSans-Regular.ttf', 'TrueTypeUnicode', '', 32);
 $pdf->SetFont($fontname, 'BI', 10, '', 'false');
 //set margins
 $pdf->SetMargins(PDF_MARGIN_LEFT, PDF_MARGIN_TOP, PDF_MARGIN_RIGHT);
