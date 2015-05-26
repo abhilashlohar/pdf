@@ -202,13 +202,13 @@ $pdf->setPageMark();
 
 
 
-$toolcopy6 = '<br/><br/><br/><br/><br/><br/><span style="color:#666;font-size:16;"><b>QUOTATION</b></span><br/>';
+$toolcopy6 = '<br/><br/><br/><br/><br/><br/><br/><span style="font-size:16;"><b>QUOTATION</b></span><br/>';
 $pdf->writeHTML($toolcopy6, true, false, true, false, '');
 
 $toolcopy3 = '<div style="color:#666;font-size:11;"><b>LAND PRICE PER PERSON:</b></div>';
 $toolcopy3 .= '<table border="1" cellpadding="5">';
 $toolcopy3 .= '<tr><td style="color:#666;font-size:9;">Per adult</td><td>'.$per_adult.'</td></tr>';
-$toolcopy3 .= '<tr style="background-color:rgb(254,204,0);color:white;font-size:10;"><td><b>TOTAL COST</b></td><td><b>'.$total.'</b></td></tr>';
+$toolcopy3 .= '<tr style="background-color:rgb(254,204,0);font-size:10;"><td><b>TOTAL COST</b></td><td><b>'.$total.'</b></td></tr>';
 $toolcopy3 .= '</table>';
 
 $pdf->writeHTML($toolcopy3, true, false, true, false, '');
@@ -252,7 +252,7 @@ $pdf->setPageMark();
 
 
 
-$toolcopy7 = '<br/><br/><br/><span style="color:#666;font-size:16;"><b>HOTEL DESCRIPTIONS</b></span><br/>';
+$toolcopy7 = '<br/><br/><br/><br/><span style="font-size:16;"><b>HOTEL DESCRIPTIONS</b></span><br/>';
 $pdf->writeHTML($toolcopy7, true, false, true, false, '');
 
 $sel_hotels=mysql_query("SELECT * FROM `hotels` where `tour_id`='$q'");
@@ -266,7 +266,7 @@ $place_email=$result_sel_hotels["place_email"];
 $file=$result_sel_hotels["file"];
 
 $toolcopy2 = '<table border="0" cellpadding="2" cellspacing="7">';
-$toolcopy2 .= '<tr><th style="background-color:#f08365;color:White;font-size:13;" align="center">'.$place.'</th></tr>';
+$toolcopy2 .= '<tr><th style="background-color:rgb(254,204,0);font-size:13;" align="center">'.$place.'</th></tr>';
 $toolcopy2 .= '</table>';
 $toolcopy2 .= '<table border="0" cellpadding="5" cellspacing="10">';
 if(!empty($file)){
@@ -302,7 +302,7 @@ $pdf->SetAutoPageBreak($auto_page_break, $bMargin);
 $pdf->setPageMark();
 
 
-$toolcopy8 = '<br/><br/><br/><span style="color:#666;font-size:16;"><b>WHY CHOOSE US</b></span><br/>';
+$toolcopy8 = '<br/><br/><br/><br/><span style="font-size:16;"><b>WHY CHOOSE US</b></span><br/>';
 $pdf->writeHTML($toolcopy8, true, false, true, false, '');
 $pdf->writeHTML($last, true, false, true, false, '');
 
