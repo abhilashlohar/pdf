@@ -84,12 +84,13 @@ $pdf->setPageMark();
 
 
 
-$toolcopy = '<br/><br/><br/><br/><br/><br/><div style="float:left;"><span style="font-size:12;"><b> Quotation prepared for </b></span></div>';
-$pdf->writeHTML($toolcopy, true, false, true, false, '');
-
-$toolcopy = '<div  style="float:left;"><span style="font-size:13;color:rgb(0,160,227);font-weight: bold;"> <b>Fusion Tours</b></span></div>';
+$toolcopy = '<br/><br/><br/><br/><br/><br/><div style="float:left;"><span style="font-size:12;"><b> Quotation prepared for </b></span><span style="font-size:13;color:rgb(0,160,227);font-weight: bold;"> <b>Fusion Tours</b></span></div>';
 $pdf->SetFont($fontNameBold, 'BI', 10, '', 'false');
 $pdf->writeHTML($toolcopy, true, false, true, false, '');
+
+
+$pdf->SetFont($fontName, 'BI', 10, '', 'false');
+
 
 
 $html='<table><tr><td>qwert</td>';
