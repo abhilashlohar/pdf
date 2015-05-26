@@ -230,7 +230,7 @@ $pdf->SetAutoPageBreak($auto_page_break, $bMargin);
 // set the starting point for the page content
 $pdf->setPageMark();
 
-$middel_page='<br/><br/><br/>';
+$middel_page='<br/><br/><br/><br/><br/><br/>';
 $middel_page.=$middel;
 $pdf->writeHTML($middel_page, true, false, true, false, '');
 
