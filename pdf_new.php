@@ -23,9 +23,9 @@ $pdf->setFooterFont(Array(PDF_FONT_NAME_DATA, '', PDF_FONT_SIZE_DATA));
 
 // set default monospaced font
 $pdf->SetDefaultMonospacedFont(PDF_FONT_MONOSPACED);
-$fontNameBold=$pdf->addTTFfont('OpenSans-Bold.ttf', 'TrueTypeUnicode', '', 32);
-$fontname=$pdf->addTTFfont('OpenSans-Regular.ttf', 'TrueTypeUnicode', '', 32);
-$pdf->SetFont($fontNameBold, 'BI', 10, '', 'false');
+$Bold=$pdf->addTTFfont('OpenSans-Bold.ttf', 'TrueTypeUnicode', '', 32);
+$Regular=$pdf->addTTFfont('OpenSans-Regular.ttf', 'TrueTypeUnicode', '', 32);
+$pdf->SetFont($Regular, 'BI', 10, '', 'false');
 //set margins
 $pdf->SetMargins(PDF_MARGIN_LEFT, PDF_MARGIN_TOP, PDF_MARGIN_RIGHT);
 $pdf->SetHeaderMargin(PDF_MARGIN_HEADER);
@@ -129,7 +129,7 @@ $toolcopy .= '<tr>
 
 $toolcopy .= '</table>';
 
-$pdf->SetFont($fontName, 'BI', 10, '', 'false');
+
 $pdf->writeHTML($toolcopy, true, false, true, false, '');
 
 
