@@ -155,9 +155,6 @@ $toolcopy5 = '<br/><br/><br/><br/><br/><br/><br/><span style="font-size:16;"><b>
 $pdf->writeHTML($toolcopy5, true, false, true, false, '');
 
 
-$toolcopy5 = '<br/><br/><br/><br/><br/><br/><br/><span style="font-size:16;"><b>  SUGGESTED ITINERARY</b></span>';
-$pdf->writeHTML($toolcopy5, true, false, true, false, '');
-
 $sel_tour_infos=mysql_query("SELECT * FROM `tour_infos` where `tour_id`='$q'");
 $i=0;
 while($result_tour_infos=mysql_fetch_array($sel_tour_infos)){
@@ -168,7 +165,7 @@ $text1=$result_tour_infos["text1"];
 $text2=$result_tour_infos["text2"];
 $text3=$result_tour_infos["text3"];
 $file=$result_tour_infos["file"];
-$toolcopy2 = '<table border="0" cellpadding="4" cellspacing="15" width="100%">';
+$toolcopy2 = '<table border="0" cellpadding="4" cellspacing="10">';
 $toolcopy2 .= '<tr style="background-color:rgb(0,160,227);color:#fff;"><td width="300px"><span style="font-size:12;">'.$date_itinary.'</span></td><td width="300px"><span style="font-size:12;">'.$arrive.'</span></td></tr>';
 if(!empty($file)){
 	$toolcopy2 .= '<tr><td><img src="../quotation/app/webroot/tour/'.$file.'" width="300px" height="200px"/></td><td><div style="font-size:11;text-align: justify;">'.$text1.'</div><hr><b style="color:#494848;font-size:10;text-align: justify;">'.$text3.'</b><br/><b style="color:#494848;font-size:10;">'.$text2.'</b></td></tr>';
