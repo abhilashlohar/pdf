@@ -252,7 +252,7 @@ $pdf->setPageMark();
 
 
 
-$toolcopy7 = '<br/><br/><br/><br/><br/><br/><br/><br/><br/><span style="font-size:16;"><b>HOTEL DESCRIPTIONS</b></span><br/>';
+$toolcopy7 = '<br/><br/><br/><br/><br/><br/><br/><br/><span style="font-size:16;"><b>HOTEL DESCRIPTIONS</b></span><br/>';
 $pdf->writeHTML($toolcopy7, true, false, true, false, '');
 
 $sel_hotels=mysql_query("SELECT * FROM `hotels` where `tour_id`='$q'");
@@ -302,7 +302,7 @@ $pdf->SetAutoPageBreak($auto_page_break, $bMargin);
 $pdf->setPageMark();
 
 
-$toolcopy8 = '<br/><br/><br/><br/><span style="font-size:16;"><b>WHY CHOOSE US</b></span><br/>';
+$toolcopy8 = '<br/><br/><br/><br/><br/><br/><br/><br/><span style="font-size:16;"><b>WHY CHOOSE US</b></span><br/>';
 $pdf->writeHTML($toolcopy8, true, false, true, false, '');
 $pdf->writeHTML($last, true, false, true, false, '');
 
