@@ -166,7 +166,7 @@ $text2=$result_tour_infos["text2"];
 $text3=$result_tour_infos["text3"];
 $file=$result_tour_infos["file"];
 $toolcopy2 = '<table border="0" cellpadding="5" cellspacing="10">';
-$toolcopy2 .= '<tr style="background-color:rgb(254,204,0);"><th><span style="font-size:12;">'.$date_itinary.'</span></th><th><span style="font-size:12;">'.$arrive.'</span></th></tr>';
+$toolcopy2 .= '<tr style="background-color:rgb(0,160,227);color:#fff;"><th><span style="font-size:12;">'.$date_itinary.'</span></th><th><span style="font-size:12;">'.$arrive.'</span></th></tr>';
 if(!empty($file)){
 	$toolcopy2 .= '<tr><td><img src="../quotation/app/webroot/tour/'.$file.'" width="300px" height="200px"/></td><td><div style="font-size:11;">'.$text1.'</div><hr><b style="color:#494848;font-size:10;">'.$text3.'</b><br/><b style="color:#494848;font-size:10;">'.$text2.'</b></td></tr>';
 }
@@ -266,7 +266,7 @@ $place_email=$result_sel_hotels["place_email"];
 $file=$result_sel_hotels["file"];
 
 $toolcopy2 = '<table border="0" cellpadding="2" cellspacing="7">';
-$toolcopy2 .= '<tr><th style="background-color:rgb(254,204,0);font-size:13;" align="center">'.$place.'</th></tr>';
+$toolcopy2 .= '<tr><th style="background-color:rgb(0,160,227);color:#fff;font-size:13;" align="center">'.$place.'</th></tr>';
 $toolcopy2 .= '</table>';
 $toolcopy2 .= '<table border="0" cellpadding="5" cellspacing="10">';
 if(!empty($file)){
