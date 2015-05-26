@@ -156,7 +156,6 @@ $pdf->writeHTML($toolcopy5, true, false, true, false, '');
 
 
 $toolcopy5 = '<table border="1"><tr><td width="30%">1</td><td>22</td></tr></table>';
-$toolcopy5. = '<table border="1"><tr><td>1</td><td>22</td></tr></table>';
 $pdf->writeHTML($toolcopy5, true, false, true, false, '');
 
 $sel_tour_infos=mysql_query("SELECT * FROM `tour_infos` where `tour_id`='$q'");
