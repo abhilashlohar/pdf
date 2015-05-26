@@ -207,7 +207,7 @@ $pdf->writeHTML($toolcopy6, true, false, true, false, '');
 
 $toolcopy3 = '<div style="color:#666;font-size:11;"><b>LAND PRICE PER PERSON:</b></div><br/>';
 $toolcopy3 .= '<table border="1" cellpadding="5">';
-$toolcopy3 .= '<tr><td style="color:#666;font-size:9;">Per adult</td><td>'.$per_adult.'</td></tr>';
+$toolcopy3 .= '<tr><td style="color:#666;font-size:9;">PER ADULT</td><td>'.$per_adult.'</td></tr>';
 $toolcopy3 .= '<tr style="background-color:rgb(0,160,227);color:#fff;font-size:10;"><td><b>TOTAL COST</b></td><td><b>'.$total.'</b></td></tr>';
 $toolcopy3 .= '</table>';
 
