@@ -25,7 +25,7 @@ $pdf->setFooterFont(Array(PDF_FONT_NAME_DATA, '', PDF_FONT_SIZE_DATA));
 $pdf->SetDefaultMonospacedFont(PDF_FONT_MONOSPACED);
 $Bold=$pdf->addTTFfont('OpenSans-Bold.ttf', 'TrueTypeUnicode', '', 32);
 $Regular=$pdf->addTTFfont('OpenSans-Regular.ttf', 'TrueTypeUnicode', '', 32);
-$pdf->SetFont($fontname, 'BI', 10, '', 'false');
+$pdf->SetFont($Regular, 'BI', 10, '', 'false');
 //set margins
 $pdf->SetMargins(PDF_MARGIN_LEFT, PDF_MARGIN_TOP, PDF_MARGIN_RIGHT);
 $pdf->SetHeaderMargin(PDF_MARGIN_HEADER);
@@ -84,7 +84,7 @@ $pdf->setPageMark();
 
 
 
-$toolcopy = '<br/><br/><br/><br/><br/><br/><div style="float:left;"><span style="font-size:12;color:#5A5A5A;"><b> Quotation prepared for </b></span><span style="font-size:13;color:rgb(0,160,227);font-weight: bold;"> <b>Fusion Tours</b></span></div>';
+$toolcopy = '<br/><br/><br/><br/><br/><br/><div style="float:left;"><span style="font-size:12;color:#5A5A5A;font-family:opensansb;"><b> Quotation prepared for </b></span><span style="font-size:13;color:rgb(0,160,227);font-weight: bold;"> <b>Fusion Tours</b></span></div>';
 
 $pdf->writeHTML($toolcopy, true, false, true, false, '');
 
