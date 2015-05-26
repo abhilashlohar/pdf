@@ -93,14 +93,6 @@ $pdf->SetFont($fontName, 'BI', 10, '', 'false');
 
 
 
-$html='<table><tr><td>qwert</td>';
-$pdf->writeHTML($html, true, false, true, false, '');
-$html.='<td>89798</td></tr></table>';
-$pdf->SetFont($fontNameBold, 'BI', 10, '', 'false');
-$pdf->writeHTML($html, true, false, true, false, '');
-
-
-$pdf->SetFont($fontname, 'BI', 10, '', 'false');
 
 $toolcopy = '<br/><br/><br/><br/>';
 $toolcopy .= '<table cellpadding="5">';
@@ -158,7 +150,7 @@ $pdf->setPageMark();
 
 
 
-$toolcopy5 = '<br/><br/><br/><span style="color:#666;font-size:16;"><b>SUGGESTED ITINERARY</b></span>';
+$toolcopy5 = '<br/><br/><br/><br/><br/><br/><span style="color:#666;font-size:16;"><b>SUGGESTED ITINERARY</b></span>';
 $pdf->writeHTML($toolcopy5, true, false, true, false, '');
 
 
@@ -173,7 +165,7 @@ $text2=$result_tour_infos["text2"];
 $text3=$result_tour_infos["text3"];
 $file=$result_tour_infos["file"];
 $toolcopy2 = '<table border="0" cellpadding="5" cellspacing="10">';
-$toolcopy2 .= '<tr style="background-color:#f08365;color:White;"><th><span style="font-size:12;">'.$date_itinary.'</span></th><th><span style="font-size:12;">'.$arrive.'</span></th></tr>';
+$toolcopy2 .= '<tr style="background-color:rgb(254,204,0);color:White;"><th><span style="font-size:12;">'.$date_itinary.'</span></th><th><span style="font-size:12;">'.$arrive.'</span></th></tr>';
 if(!empty($file)){
 	$toolcopy2 .= '<tr><td><img src="../quotation/app/webroot/tour/'.$file.'" width="300px" height="200px"/></td><td><div style="font-size:11;">'.$text1.'</div><hr><b style="color:#494848;font-size:10;">'.$text3.'</b><br/><b style="color:#494848;font-size:10;">'.$text2.'</b></td></tr>';
 }
