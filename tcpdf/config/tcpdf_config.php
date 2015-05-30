@@ -140,7 +140,7 @@ if (!defined('K_TCPDF_EXTERNAL_CONFIG')) {
 	/**
 	 * image logo
 	 */
-	define ('PDF_HEADER_LOGO', '');
+	define ('PDF_HEADER_LOGO', 'Fusion.png');
 
 	/**
 	 * header logo image width [mm]
