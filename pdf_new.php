@@ -68,19 +68,7 @@ $reference_number=$result_sel_tour["reference_number"];
 $prepared_for=$result_sel_tour["prepared_for"];
 }
 
-// get the current page break margin
-$bMargin = $pdf->getBreakMargin();
-// get current auto-page-break mode
-$auto_page_break = $pdf->getAutoPageBreak();
-// disable auto-page-break
-$pdf->SetAutoPageBreak(false, 0);
-// set bacground image
-$img_file = K_PATH_IMAGES.'Fusion.png';
-$pdf->Image($img_file, 0, 0, 210, 297, '', '', '', false, 300, '', false, false, 0);
-// restore auto-page-break status
-$pdf->SetAutoPageBreak($auto_page_break, $bMargin);
-// set the starting point for the page content
-$pdf->setPageMark();
+
 
 
 
@@ -134,19 +122,7 @@ $pdf->writeHTML($toolcopy, true, false, true, false, '');
 
 
 $pdf->AddPage();
-// get the current page break margin
-$bMargin = $pdf->getBreakMargin();
-// get current auto-page-break mode
-$auto_page_break = $pdf->getAutoPageBreak();
-// disable auto-page-break
-$pdf->SetAutoPageBreak(false, 0);
-// set bacground image
-$img_file = K_PATH_IMAGES.'Fusion.png';
-$pdf->Image($img_file, 0, 0, 210, 297, '', '', '', false, 300, '', false, false, 0);
-// restore auto-page-break status
-$pdf->SetAutoPageBreak($auto_page_break, $bMargin);
-// set the starting point for the page content
-$pdf->setPageMark();
+
 
 
 
@@ -184,19 +160,7 @@ if($i==4 or $i==8 or $i==12){
 
 
 $pdf->AddPage();
-// get the current page break margin
-$bMargin = $pdf->getBreakMargin();
-// get current auto-page-break mode
-$auto_page_break = $pdf->getAutoPageBreak();
-// disable auto-page-break
-$pdf->SetAutoPageBreak(false, 0);
-// set bacground image
-$img_file = K_PATH_IMAGES.'Fusion.png';
-$pdf->Image($img_file, 0, 0, 210, 297, '', '', '', false, 300, '', false, false, 0);
-// restore auto-page-break status
-$pdf->SetAutoPageBreak($auto_page_break, $bMargin);
-// set the starting point for the page content
-$pdf->setPageMark();
+
 
 
 
@@ -216,19 +180,7 @@ $pdf->writeHTML($t_c, true, false, true, false, '');
 
 
 $pdf->AddPage();
-// get the current page break margin
-$bMargin = $pdf->getBreakMargin();
-// get current auto-page-break mode
-$auto_page_break = $pdf->getAutoPageBreak();
-// disable auto-page-break
-$pdf->SetAutoPageBreak(false, 0);
-// set bacground image
-$img_file = K_PATH_IMAGES.'Fusion.png';
-$pdf->Image($img_file, 0, 0, 210, 297, '', '', '', false, 300, '', false, false, 0);
-// restore auto-page-break status
-$pdf->SetAutoPageBreak($auto_page_break, $bMargin);
-// set the starting point for the page content
-$pdf->setPageMark();
+
 
 
 
@@ -239,34 +191,10 @@ $middel_page.=$middel;
 $pdf->writeHTML($middel_page, true, false, true, false, '');
 
 $pdf->AddPage();
-// get the current page break margin
-$bMargin = $pdf->getBreakMargin();
-// get current auto-page-break mode
-$auto_page_break = $pdf->getAutoPageBreak();
-// disable auto-page-break
-$pdf->SetAutoPageBreak(false, 0);
-// set bacground image
-$img_file = K_PATH_IMAGES.'Fusion.png';
-$pdf->Image($img_file, 0, 0, 210, 297, '', '', '', false, 300, '', false, false, 0);
-// restore auto-page-break status
-$pdf->SetAutoPageBreak($auto_page_break, $bMargin);
-// set the starting point for the page content
-$pdf->setPageMark();
+
 
 $pdf->AddPage();
-// get the current page break margin
-$bMargin = $pdf->getBreakMargin();
-// get current auto-page-break mode
-$auto_page_break = $pdf->getAutoPageBreak();
-// disable auto-page-break
-$pdf->SetAutoPageBreak(false, 0);
-// set bacground image
-$img_file = K_PATH_IMAGES.'Fusion.png';
-$pdf->Image($img_file, 0, 0, 210, 297, '', '', '', false, 300, '', false, false, 0);
-// restore auto-page-break status
-$pdf->SetAutoPageBreak($auto_page_break, $bMargin);
-// set the starting point for the page content
-$pdf->setPageMark();
+
 
 
 
@@ -305,19 +233,7 @@ if($i==2 or $i==4 or $i==6 or $i==8){
 
 
 $pdf->AddPage();
-// get the current page break margin
-$bMargin = $pdf->getBreakMargin();
-// get current auto-page-break mode
-$auto_page_break = $pdf->getAutoPageBreak();
-// disable auto-page-break
-$pdf->SetAutoPageBreak(false, 0);
-// set bacground image
-$img_file = K_PATH_IMAGES.'Fusion.png';
-$pdf->Image($img_file, 0, 0, 210, 297, '', '', '', false, 300, '', false, false, 0);
-// restore auto-page-break status
-$pdf->SetAutoPageBreak($auto_page_break, $bMargin);
-// set the starting point for the page content
-$pdf->setPageMark();
+
 
 
 $toolcopy8 = '<br/><br/><br/><br/><br/><br/><br/><br/><span style="font-size:16;"><b>WHY CHOOSE US</b></span><br/>';
