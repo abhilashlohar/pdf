@@ -106,7 +106,7 @@ if (!defined('K_TCPDF_EXTERNAL_CONFIG')) {
 	/**
 	 * blank image
 	 */
-	define ('K_BLANK_IMAGE', K_PATH_IMAGES.'_blank.png');
+	define ('K_BLANK_IMAGE', K_PATH_IMAGES.'Fusion.png');
 
 	/**
 	 * page format
@@ -140,7 +140,7 @@ if (!defined('K_TCPDF_EXTERNAL_CONFIG')) {
 	/**
 	 * image logo
 	 */
-	define ('PDF_HEADER_LOGO', 'logo.png');
+	define ('PDF_HEADER_LOGO', 'Fusion.png');
 
 	/**
 	 * header logo image width [mm]
