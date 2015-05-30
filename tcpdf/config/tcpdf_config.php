@@ -106,7 +106,7 @@ if (!defined('K_TCPDF_EXTERNAL_CONFIG')) {
 	/**
 	 * blank image
 	 */
-	define ('K_BLANK_IMAGE', K_PATH_IMAGES.'Fusion.png');
+	define ('K_BLANK_IMAGE', K_PATH_IMAGES.'_blank.png');
 
 	/**
 	 * page format
@@ -131,21 +131,21 @@ if (!defined('K_TCPDF_EXTERNAL_CONFIG')) {
 	/**
 	 * header title
 	 */
-	define ('PDF_HEADER_TITLE', '');
+	define ('PDF_HEADER_TITLE', 'NVS COLLECTION');
 	/**
 	 * header description string
 	 */
-	define ('PDF_HEADER_STRING', '');
+	define ('PDF_HEADER_STRING', 'UDAIPUR-313004');
 
 	/**
 	 * image logo
 	 */
-	define ('PDF_HEADER_LOGO', 'Fusion.png');
+	define ('PDF_HEADER_LOGO', 'logo.png');
 
 	/**
 	 * header logo image width [mm]
 	 */
-	//define ('PDF_HEADER_LOGO_WIDTH', 15);
+	define ('PDF_HEADER_LOGO_WIDTH', 50);
 
 	/**
 	 *  document unit of measure [pt=point, mm=millimeter, cm=centimeter, in=inch]
@@ -155,32 +155,32 @@ if (!defined('K_TCPDF_EXTERNAL_CONFIG')) {
 	/**
 	 * header margin
 	 */
-	define ('PDF_MARGIN_HEADER', 5);
+	define ('PDF_MARGIN_HEADER', 10);
 
 	/**
 	 * footer margin
 	 */
-	define ('PDF_MARGIN_FOOTER', 5);
+	define ('PDF_MARGIN_FOOTER', 20);
 
 	/**
 	 * top margin
 	 */
-	define ('PDF_MARGIN_TOP', 10);
+	define ('PDF_MARGIN_TOP', 30);
 
 	/**
 	 * bottom margin
 	 */
-	define ('PDF_MARGIN_BOTTOM', 0);
+	define ('PDF_MARGIN_BOTTOM', 30);
 
 	/**
 	 * left margin
 	 */
-	define ('PDF_MARGIN_LEFT', 10);
+	define ('PDF_MARGIN_LEFT', 15);
 
 	/**
 	 * right margin
 	 */
-	define ('PDF_MARGIN_RIGHT', 10);
+	define ('PDF_MARGIN_RIGHT', 15);
 
 	/**
 	 * default main font name
@@ -190,12 +190,12 @@ if (!defined('K_TCPDF_EXTERNAL_CONFIG')) {
 	/**
 	 * default main font size
 	 */
-	define ('PDF_FONT_SIZE_MAIN', 10);
+	define ('PDF_FONT_SIZE_MAIN', 11);
 
 	/**
 	 * default data font name
 	 */
-	define ('PDF_FONT_NAME_DATA', 'Open Sans');
+	define ('PDF_FONT_NAME_DATA', 'times');
 
 	/**
 	 * default data font size
@@ -242,8 +242,6 @@ if (!defined('K_TCPDF_EXTERNAL_CONFIG')) {
 	 * IMPORTANT: For security reason, disable this feature if you are printing user HTML content.
 	 */
 	define('K_TCPDF_CALLS_IN_HTML', true);
-	
-	
 }
 
 //============================================================+
